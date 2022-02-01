@@ -48,8 +48,8 @@ export class CartController {
       (cartItem) => cartItem.id === parseInt(id),
     );
     if(cartItem){
-      cartItem.quantity += 1,
-    }else {
+      cartItem.quantity += 1;
+    } else {
       cart.cartItems.push({
         ...products.find((product)=> product.id === parseInt(id)),
         quantity: 1
