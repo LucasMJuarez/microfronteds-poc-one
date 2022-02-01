@@ -3,13 +3,13 @@ import "./index.scss";
 import ReactDOM from "react-dom";
 import Footer from "./Footer";
 import Header from "./Header";
-
+import HomeContent from "./HomeContent";
 
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
-    <Header app={{name: 'home'}}/>
+    <Header />
     <div className="my-10">
-      Home Page Content
+      <HomeContent />
     </div>
     <Footer />
   </div>
